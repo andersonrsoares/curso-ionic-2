@@ -3,13 +3,15 @@ import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { GeneratedTest } from '../pages/generated-test/generated-test';
+import { Alert } from '../pages/alert/alert';
 import { ConnectionService } from '../providers/connection-service';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    GeneratedTest
+    GeneratedTest,
+    Alert
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -18,7 +20,8 @@ import { ConnectionService } from '../providers/connection-service';
   entryComponents: [
     MyApp,
     HomePage,
-    GeneratedTest
+    GeneratedTest,
+    Alert
   ],
   providers: [ConnectionService]
 })

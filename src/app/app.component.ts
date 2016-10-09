@@ -5,6 +5,7 @@ import { StatusBar } from 'ionic-native';
 
 import { HomePage } from '../pages/home/home';
 import { GeneratedTest } from '../pages/generated-test/generated-test';
+import { Alert } from '../pages/alert/alert';
 
 @Component({
   templateUrl: 'app.html'
@@ -20,7 +21,8 @@ export class MyApp {
     this.menuCtrl = menuCtrl;
     this.pages = [
       {component:HomePage,title:'Home',icon:'home'},
-      {component:GeneratedTest,title:'Generated ',icon:'home'}
+      {component:GeneratedTest,title:'Generated ',icon:'home'},
+      {component:Alert,title:'Alert ',icon:'home'}
     ];
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
