@@ -17,9 +17,16 @@ export class Alert {
 
   alert(){
     let alert = this.alertCtrl.create({
-      title: 'New Friend!',
-      subTitle: 'Your friend, Obi wan Kenobi, just accepted your friend request!',
-      buttons: ['OK']
+      title: 'Alet teste',
+      subTitle: 'teste de alert no ionic 2',
+      buttons: [
+        {
+          text: 'OK',
+          handler: data => {
+            console.log('ok clicked');
+          }
+        }
+      ]
     });
     alert.present();
   }

@@ -4,6 +4,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { GeneratedTest } from '../pages/generated-test/generated-test';
 import { Alert } from '../pages/alert/alert';
+import { Button } from '../pages/button/button';
 import { ConnectionService } from '../providers/connection-service';
 
 @NgModule({
@@ -11,7 +12,8 @@ import { ConnectionService } from '../providers/connection-service';
     MyApp,
     HomePage,
     GeneratedTest,
-    Alert
+    Alert,
+    Button
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -21,7 +23,8 @@ import { ConnectionService } from '../providers/connection-service';
     MyApp,
     HomePage,
     GeneratedTest,
-    Alert
+    Alert,
+    Button
   ],
   providers: [ConnectionService]
 })
