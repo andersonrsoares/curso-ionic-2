@@ -7,6 +7,8 @@ import { HomePage } from '../pages/home/home';
 import { GeneratedTest } from '../pages/generated-test/generated-test';
 import { Alert } from '../pages/alert/alert';
 import { Button } from '../pages/button/button';
+import { Cards } from '../pages/cards/cards';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -23,8 +25,9 @@ export class MyApp {
     this.pages = [
       {component:HomePage,title:'Home',icon:'home'},
       {component:GeneratedTest,title:'Generated ',icon:'home'},
-      {component:Alert,title:'Alert ',icon:'home'},
-      {component:Button,title:'Button ',icon:'home'}
+      {component:Alert,title:'Alert ',icon:'logo'},
+      {component:Button,title:'Button ',icon:'home'},
+      {component:Cards,title:'Cards ',icon:'home'}
     ];
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
