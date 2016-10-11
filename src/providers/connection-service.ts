@@ -14,6 +14,10 @@ export class ConnectionService {
     return  this.http.get('https://viacep.com.br/ws/81900350/json/').toPromise();
 
   }
+  getPlanetas() : Promise<Response>{
+    return  this.http.get('https://api.myjson.com/bins/4zdzq').toPromise();
+
+  }
   getCep2() : Promise<Response>{
     return new Promise(resolve => {
 
