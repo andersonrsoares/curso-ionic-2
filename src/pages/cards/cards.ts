@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController,LoadingController } from 'ionic-angular';
 import { ConnectionService } from '../../providers/connection-service';
 /*
   Generated class for the Cards page.
@@ -15,7 +15,7 @@ export class Cards {
 
 //  planetas: Array<{nome:string,imagem:string}>;
   planetas: any;
-  constructor(public navCtrl: NavController,private connectionService:ConnectionService) {
+  constructor(public navCtrl: NavController,private connectionService:ConnectionService,public loadingCtrl: LoadingController) {
     this.buscaPlanetas();
   }
 
@@ -24,13 +24,19 @@ export class Cards {
   }
 
   buscaPlanetas(){
+    let loading = this.loadingCtrl.create({
+       content: 'Buscando dados...'
+     });
+     loading.present();
     this.connectionService.getPlanetas()
       .then((res) => {
            let json = res.json();
             console.log(res);
             console.log(json);
             this.planetas = json.planetas;
+            loading.dismiss();
       }).catch((err)=>{
+          loading.dismiss();
           console.log(err);
       });
   }

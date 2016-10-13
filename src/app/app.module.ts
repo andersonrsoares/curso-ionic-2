@@ -6,6 +6,8 @@ import { GeneratedTest } from '../pages/generated-test/generated-test';
 import { Alert } from '../pages/alert/alert';
 import { Button } from '../pages/button/button';
 import { Cards } from '../pages/cards/cards';
+import { Modal } from '../pages/modal/modal';
+import { ModalLogin } from '../pages/modal-login/modal-login';
 import { ConnectionService } from '../providers/connection-service';
 
 @NgModule({
@@ -15,7 +17,9 @@ import { ConnectionService } from '../providers/connection-service';
     GeneratedTest,
     Alert,
     Button,
-    Cards
+    Cards,
+    Modal,
+    ModalLogin
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -27,7 +31,9 @@ import { ConnectionService } from '../providers/connection-service';
     GeneratedTest,
     Alert,
     Button,
-    Cards
+    Cards,
+    Modal,
+    ModalLogin
   ],
   providers: [ConnectionService]
 })

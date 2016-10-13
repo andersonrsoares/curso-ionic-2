@@ -8,6 +8,7 @@ import { GeneratedTest } from '../pages/generated-test/generated-test';
 import { Alert } from '../pages/alert/alert';
 import { Button } from '../pages/button/button';
 import { Cards } from '../pages/cards/cards';
+import { Modal } from '../pages/modal/modal';
 
 
 @Component({
@@ -25,9 +26,10 @@ export class MyApp {
     this.pages = [
       {component:HomePage,title:'Home',icon:'home'},
       {component:GeneratedTest,title:'Generated ',icon:'home'},
-      {component:Alert,title:'Alert ',icon:'logo'},
-      {component:Button,title:'Button ',icon:'home'},
-      {component:Cards,title:'Cards ',icon:'home'}
+      {component:Alert,title:'Alert',icon:'logo'},
+      {component:Button,title:'Button',icon:'home'},
+      {component:Cards,title:'Cards',icon:'home'},
+      {component:Modal,title:'Modal',icon:'home'}
     ];
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
