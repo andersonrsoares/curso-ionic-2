@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController,ViewController,NavParams } from 'ionic-angular';
 
 /*
   Generated class for the ModalLogin page.
@@ -13,10 +13,17 @@ import { NavController } from 'ionic-angular';
 })
 export class ModalLogin {
 
-  constructor(public navCtrl: NavController) {}
+  constructor(public navCtrl: NavController,public view: ViewController,public parans: NavParams) {
+       console.log(parans.get("paramm"));
+  }
 
   ionViewDidLoad() {
     console.log('Hello ModalLogin Page');
   }
 
+  close(){
+      var parametro:string;
+      parametro = "teste"
+      this.view.dismiss(parametro);
+  }
 }

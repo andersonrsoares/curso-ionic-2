@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController,NavParams } from 'ionic-angular';
 import { ConnectionService } from '../../providers/connection-service';
 
 @Component({
@@ -9,8 +9,9 @@ import { ConnectionService } from '../../providers/connection-service';
 export class GeneratedTest {
   resultado: string = 'teste';
 
-  constructor(public navCtrl: NavController, private connectionService:ConnectionService) {
-
+  constructor(public navCtrl: NavController, private connectionService:ConnectionService,public parans: NavParams) {
+      console.log(parans.get("param"));
+      console.log(parans.data.param);
   }
 
   buscaCep(){
@@ -23,6 +24,10 @@ export class GeneratedTest {
       }).catch((err)=>{
           console.log(err);
       });
+  }
+
+  voltar(){
+    this.navCtrl.pop();
   }
   // ionViewDidLoad() {
   //   console.log('Hello GeneratedTest Page');

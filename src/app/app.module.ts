@@ -8,7 +8,12 @@ import { Button } from '../pages/button/button';
 import { Cards } from '../pages/cards/cards';
 import { Modal } from '../pages/modal/modal';
 import { ModalLogin } from '../pages/modal-login/modal-login';
+import { Navigation } from '../pages/navigation/navigation';
 import { ConnectionService } from '../providers/connection-service';
+import { Tab } from '../pages/tab/tab';
+import { HomeTab } from '../pages/home-tab/home-tab';
+import { ContatoTab } from '../pages/contato-tab/contato-tab';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +24,11 @@ import { ConnectionService } from '../providers/connection-service';
     Button,
     Cards,
     Modal,
-    ModalLogin
+    ModalLogin,
+    Navigation,
+    Tab,
+    HomeTab,
+    ContatoTab
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -33,7 +42,11 @@ import { ConnectionService } from '../providers/connection-service';
     Button,
     Cards,
     Modal,
-    ModalLogin
+    ModalLogin,
+    Navigation,
+    Tab,
+    HomeTab,
+    ContatoTab
   ],
   providers: [ConnectionService]
 })

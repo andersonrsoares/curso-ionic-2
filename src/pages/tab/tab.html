@@ -4,13 +4,15 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      Generated
+      Tab
     </ion-title>
   </ion-navbar>
 </ion-header>
 
+
 <ion-content padding>
-  <button ion-button full (click)="buscaCep()">Request CEP </button>
-  <label>{{ resultado }}</label>
-  <button ion-button full (click)="voltar()">Voltar</button>
+  <ion-tabs>
+     <ion-tab tabTitle="Home" [root]="home"></ion-tab>
+      <ion-tab tabTitle="Contato" [root]="contato"></ion-tab>
+   </ion-tabs>
 </ion-content>

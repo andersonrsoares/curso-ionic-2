@@ -9,6 +9,8 @@ import { Alert } from '../pages/alert/alert';
 import { Button } from '../pages/button/button';
 import { Cards } from '../pages/cards/cards';
 import { Modal } from '../pages/modal/modal';
+import { Navigation } from '../pages/navigation/navigation';
+import { Tab } from '../pages/tab/tab';
 
 
 @Component({
@@ -29,7 +31,9 @@ export class MyApp {
       {component:Alert,title:'Alert',icon:'logo'},
       {component:Button,title:'Button',icon:'home'},
       {component:Cards,title:'Cards',icon:'home'},
-      {component:Modal,title:'Modal',icon:'home'}
+      {component:Modal,title:'Modal',icon:'home'},
+      {component:Navigation,title:'Navigation',icon:'home'},
+      {component:Tab,title:'Tab',icon:'home'}
     ];
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.

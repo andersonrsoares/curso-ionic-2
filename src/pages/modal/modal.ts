@@ -21,7 +21,11 @@ export class Modal {
 
   showModal(){
         console.log('Modal');
-    let profileModal = this.modalCtrl.create(ModalLogin);
+    let profileModal = this.modalCtrl.create(ModalLogin,{ param:'teste abre uma modal'});
+    profileModal.onDismiss((param)=>{
+       console.log(param);
+    });
+
     profileModal.present();
   }
 }
