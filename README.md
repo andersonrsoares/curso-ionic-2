@@ -15,6 +15,9 @@ $ ionic g provider nome-provider
 
 $ ionic serve --lab
 
-plugins 
+plugins
+$ ionic plugin add cordova-sqlite-storage
+$ ionic plugin add cordova-plugin-nativestorage
+ferramentas
 emmeti
 Aton typescript

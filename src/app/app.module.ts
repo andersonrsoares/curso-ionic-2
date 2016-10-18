@@ -15,6 +15,8 @@ import { HomeTab } from '../pages/home-tab/home-tab';
 import { ContatoTab } from '../pages/contato-tab/contato-tab';
 import { Toast } from '../pages/toast/toast';
 import { Toolbar } from '../pages/toolbar/toolbar';
+import { Bancodados } from '../pages/bancodados/bancodados';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { Toolbar } from '../pages/toolbar/toolbar';
     HomeTab,
     ContatoTab,
     Toast,
-    Toolbar
+    Toolbar,
+    Bancodados
   ],
   imports: [
     IonicModule.forRoot(MyApp, {
@@ -65,7 +68,8 @@ import { Toolbar } from '../pages/toolbar/toolbar';
     HomeTab,
     ContatoTab,
     Toast,
-    Toolbar
+    Toolbar,
+    Bancodados
   ],
   providers: [ConnectionService]
 })

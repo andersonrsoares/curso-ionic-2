@@ -13,6 +13,7 @@ import { Navigation } from '../pages/navigation/navigation';
 import { Tab } from '../pages/tab/tab';
 import { Toast } from '../pages/toast/toast';
 import { Toolbar } from '../pages/toolbar/toolbar';
+import { Bancodados } from '../pages/bancodados/bancodados';
 
 @Component({
   templateUrl: 'app.html'
@@ -36,7 +37,8 @@ export class MyApp {
       {component:Navigation,title:'Navigation',icon:'home'},
       {component:Tab,title:'Tab',icon:'home'},
       {component:Toast,title:'Toast',icon:'home'},
-      {component:Toolbar,title:'Toolbar',icon:'home'}
+      {component:Toolbar,title:'Toolbar',icon:'home'},
+      {component:Bancodados,title:'Banco de Dados',icon:'home'}
     ];
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.

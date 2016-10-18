@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Banco de Dados
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content padding>
+  <button ion-button full (click)="selectDB()">select SQLite </button>
+  <button ion-button full (click)="insertBB()">insert SQLite </button>
+    <label>{{ resultado }}</label>
+</ion-content>
