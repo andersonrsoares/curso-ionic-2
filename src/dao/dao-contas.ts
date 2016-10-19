@@ -4,6 +4,7 @@ import { NativeStorage,SQLite } from 'ionic-native';
 export  class DAOContas {
 
   private db:SQLite;
+  private menssage:string="";
   constructor() {
       this.db = new SQLite();
       this.db.openDatabase({
@@ -12,12 +13,17 @@ export  class DAOContas {
       }).then(() => {
         this.db.executeSql('CREATE TABLE IF NOT EXISTS contas(descricao VARCHAR(32))', {}).then(() => {
         }, (err) => {
+          this.menssage = 'Unable to execute sql: ' + JSON.stringify(err);
           console.error('Unable to execute sql: ', err);
         });
       }, (err) => {
-        console.error('Unable to open database: ', err);
+          this.menssage = 'Unable to open database: '+ JSON.stringify(err);
       });
 
+  }
+
+  getMessage() :string{
+      return   this.menssage;
   }
 
   getList() :Promise<any>{
@@ -26,7 +32,7 @@ export  class DAOContas {
   }
 
   insert(conta:any){
-
+      return this.db.executeSql("insert into contas(descricao) values(?)",["teste"]);
   }
 
   edit(conta:any){
