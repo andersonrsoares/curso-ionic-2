@@ -18,6 +18,8 @@ $ ionic serve --lab
 plugins
 $ ionic plugin add cordova-sqlite-storage
 $ ionic plugin add cordova-plugin-nativestorage
+ionic plugin add cordova-plugin-camera
 ferramentas
 emmeti
 Aton typescript
+http://lab.ionic.io/ 
