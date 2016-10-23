@@ -22,7 +22,7 @@ export class Modal {
   showModal(){
         console.log('Modal');
     let profileModal = this.modalCtrl.create(ModalLogin,{ param:'teste abre uma modal'});
-    profileModal.onDismiss((param)=>{
+    profileModal.onDidDismiss((param)=>{
        console.log(param);
     });
 

@@ -22,6 +22,7 @@ export class ModalLogin {
   }
 
   close(){
+    console.log('close()');
       var parametro:string;
       parametro = "teste"
       this.view.dismiss(parametro);
