@@ -16,7 +16,7 @@ import { ContatoTab } from '../pages/contato-tab/contato-tab';
 import { Toast } from '../pages/toast/toast';
 import { Toolbar } from '../pages/toolbar/toolbar';
 import { Bancodados } from '../pages/bancodados/bancodados';
-
+import { TakeCamera } from '../pages/camera/camera';
 
 @NgModule({
   declarations: [
@@ -34,7 +34,8 @@ import { Bancodados } from '../pages/bancodados/bancodados';
     ContatoTab,
     Toast,
     Toolbar,
-    Bancodados
+    Bancodados,
+    TakeCamera
   ],
   imports: [
     IonicModule.forRoot(MyApp, {
@@ -69,7 +70,8 @@ import { Bancodados } from '../pages/bancodados/bancodados';
     ContatoTab,
     Toast,
     Toolbar,
-    Bancodados
+    Bancodados,
+    TakeCamera
   ],
   providers: [ConnectionService]
 })

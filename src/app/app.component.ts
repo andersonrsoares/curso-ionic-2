@@ -14,6 +14,7 @@ import { Tab } from '../pages/tab/tab';
 import { Toast } from '../pages/toast/toast';
 import { Toolbar } from '../pages/toolbar/toolbar';
 import { Bancodados } from '../pages/bancodados/bancodados';
+import { TakeCamera } from '../pages/camera/camera';
 
 @Component({
   templateUrl: 'app.html'
@@ -38,7 +39,8 @@ export class MyApp {
       {component:Tab,title:'Tab',icon:'home'},
       {component:Toast,title:'Toast',icon:'home'},
       {component:Toolbar,title:'Toolbar',icon:'home'},
-      {component:Bancodados,title:'Banco de Dados',icon:'home'}
+      {component:Bancodados,title:'Banco de Dados',icon:'home'},
+          {component:TakeCamera,title:'Camera',icon:'home'}
     ];
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
