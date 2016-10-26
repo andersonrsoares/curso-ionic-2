@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController,Platform } from 'ionic-angular';
-import { GoogleMap, GoogleMapsEvent,GoogleMapsLatLng } from 'ionic-native';
+import { GoogleMap, GoogleMapsEvent,GoogleMapsLatLng,GoogleMapsMarkerOptions,GoogleMapsMarker } from 'ionic-native';
 
 /*
   Generated class for the Maps page.
@@ -50,6 +50,15 @@ export class Maps {
       });
       this.map.on(GoogleMapsEvent.MAP_READY).subscribe(() => {
           console.log('Map is ready!');
+          let markerOptions: GoogleMapsMarkerOptions = {
+            position: location,
+            title: 'Ionic'
+          };
+
+          this.map.addMarker(markerOptions)
+            .then((marker: GoogleMapsMarker) => {
+              marker.showInfoWindow();
+            });
       });
   }
 

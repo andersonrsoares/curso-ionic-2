@@ -2,10 +2,10 @@
 curso ionic 2
 
 comandos
-npm uninstall –g cordova<br/>
-npm uninstall –g ionic<br/>
+npm uninstall -g cordova<br/>
+npm uninstall -g ionic<br/>
 npm cache clean<br/>
-npm install –g ionic@2.1.1<br/>
+npm install -g ionic@2.1.1<br/>
 $ npm install -g ionic<br/>
 $ npm install -g cordova<br/>
 
