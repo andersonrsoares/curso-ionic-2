@@ -9,6 +9,18 @@ npm install -g ionic@2.1.1<br/>
 $ npm install -g ionic<br/>
 $ npm install -g cordova<br/>
 
+
+adicionar plataforma
+ionic  platform add ios / ios@3.9.0 version<br/>
+ionic  platform add android<br/>
+
+remover plataforma
+ionic platform rm android<br/>
+ionic platform rm ios<br/>
+
+reset plugins e platforms
+ionic state reset<br/>
+
 criando projeto
 $ ionic start blank --v2<br/>
 
