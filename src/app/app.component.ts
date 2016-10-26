@@ -1,4 +1,4 @@
-import { Component,ViewChild } from '@angular/core';
+import { Component } from '@angular/core';//ViewChild
 import { Platform,MenuController } from 'ionic-angular';
 import { StatusBar } from 'ionic-native';
 
@@ -15,6 +15,7 @@ import { Toast } from '../pages/toast/toast';
 import { Toolbar } from '../pages/toolbar/toolbar';
 import { Bancodados } from '../pages/bancodados/bancodados';
 import { TakeCamera } from '../pages/camera/camera';
+import { Maps } from '../pages/maps/maps';
 
 @Component({
   templateUrl: 'app.html'
@@ -40,7 +41,8 @@ export class MyApp {
       {component:Toast,title:'Toast',icon:'home'},
       {component:Toolbar,title:'Toolbar',icon:'home'},
       {component:Bancodados,title:'Banco de Dados',icon:'home'},
-          {component:TakeCamera,title:'Camera',icon:'home'}
+      {component:TakeCamera,title:'Camera',icon:'home'},
+      {component:Maps,title:'Maps',icon:'home'}
     ];
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.

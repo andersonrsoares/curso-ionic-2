@@ -17,6 +17,7 @@ import { Toast } from '../pages/toast/toast';
 import { Toolbar } from '../pages/toolbar/toolbar';
 import { Bancodados } from '../pages/bancodados/bancodados';
 import { TakeCamera } from '../pages/camera/camera';
+import { Maps } from '../pages/maps/maps';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { TakeCamera } from '../pages/camera/camera';
     Toast,
     Toolbar,
     Bancodados,
-    TakeCamera
+    TakeCamera,
+    Maps
   ],
   imports: [
     IonicModule.forRoot(MyApp, {
@@ -71,7 +73,8 @@ import { TakeCamera } from '../pages/camera/camera';
     Toast,
     Toolbar,
     Bancodados,
-    TakeCamera
+    TakeCamera,
+    Maps
   ],
   providers: [ConnectionService]
 })

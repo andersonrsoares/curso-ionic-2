@@ -2,24 +2,30 @@
 curso ionic 2
 
 comandos
-$ npm install -g ionic
-$ npm install -g cordova
+npm uninstall –g cordova<br/>
+npm uninstall –g ionic<br/>
+npm cache clean<br/>
+npm install –g ionic@2.1.1<br/>
+$ npm install -g ionic<br/>
+$ npm install -g cordova<br/>
 
-creandoi projeto
-$ ionic start blank --v2
+criando projeto
+$ ionic start blank --v2<br/>
 
-$ ionic start blank --v2
+$ ionic start blank --v2<br/>
 
-$ ionic g page nome-pagina
-$ ionic g provider nome-provider
+$ ionic g page nome-pagina<br/>
+$ ionic g provider nome-provider<br/>
 
-$ ionic serve --lab
+$ ionic serve --lab<br/>
 
-plugins
-$ ionic plugin add cordova-sqlite-storage
-$ ionic plugin add cordova-plugin-nativestorage
-ionic plugin add cordova-plugin-camera
+plugins<br/>
+ionic plugin add cordova-sqlite-storage<br/>
+ionic plugin add cordova-plugin-nativestorage<br/>
+ionic plugin add cordova-plugin-camera<br/>
+ionic plugin add cordova-plugin-googlemaps --variable API_KEY_FOR_ANDROID="AIzaSyB49dIvB-gD19btb9avM7w7X5Y-b6Nj2OM" --variable API_KEY_FOR_IOS="AIzaSyB49dIvB-gD19btb9avM7w7X5Y-b6Nj2OM"<br/>
+
 ferramentas
-emmeti
-Aton typescript
-http://lab.ionic.io/ 
+emmeti<br/>
+Aton typescript<br/>
+http://lab.ionic.io/<br/>
