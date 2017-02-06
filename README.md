@@ -18,6 +18,11 @@ remover plataforma
 ionic platform rm android<br/>
 ionic platform rm ios<br/>
 
+
+criando icone e splash(os icones devem estar na pasta resource)<br/>
+ionic resources --splash<br/>
+ionic resources --icon<br/>
+
 reset plugins e platforms
 ionic state reset<br/>
 
